@@ -1,0 +1,77 @@
+.body_placeholder {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register,
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45vw;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form_info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_mainInfo {
+  width: 15vw;
+}
+.form_radioBtn:nth-of-type(3) {
+  margin-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  transition: 0.5s all;
+  border-radius: 4px;
+}
+.form_info + input {
+  align-self: center;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 7.5vw;
+  font-size: 1.1rem;
+}
+.form_info + input:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.form_radioBtn {
+  display: flex;
+  align-items: center;
+  width: 8vw;
+}
+.form_radioBtn input {
+  margin: 0.5rem;
+}
+
+.form_tertiaryInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form_tertiaryInfo--input {
+  border: none;
+}
+.form_tertiaryInfo textarea {
+  width: 200px;
+  height: 200px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}

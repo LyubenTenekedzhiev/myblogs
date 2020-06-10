@@ -1,0 +1,17 @@
+.form_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_login input:nth-of-type(3) {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.form_login input:nth-of-type(3):hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
