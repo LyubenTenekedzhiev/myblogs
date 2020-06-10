@@ -1,4 +1,4 @@
-.body_placeholder {
+.body {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,27 +22,32 @@
   justify-content: space-evenly;
 }
 
-.form_mainInfo {
+.form_column-1 {
   width: 15vw;
 }
-.form_radioBtn:nth-of-type(3) {
-  margin-bottom: 1rem;
-}
-
-input {
+.form_column-1 input {
   margin-bottom: 1rem;
   padding: 0.6rem;
   border: 1px solid black;
   transition: 0.5s all;
   border-radius: 4px;
 }
+
+.form_radioBtn:nth-of-type(3) {
+  margin-bottom: 1rem;
+}
+
 .form_info + input {
   align-self: center;
-  background-color: white;
-  cursor: pointer;
-  margin-top: 2rem;
   width: 7.5vw;
   font-size: 1.1rem;
+  padding: 0.6rem;
+  margin-top: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s all;
 }
 .form_info + input:hover {
   color: white;
@@ -50,25 +55,23 @@ input {
   background-color: black;
 }
 
-.form_radioBtn {
+.form_radioBtn-container {
   display: flex;
   align-items: center;
   width: 8vw;
 }
-.form_radioBtn input {
+.form_radioBtn-container input {
   margin: 0.5rem;
 }
 
-.form_tertiaryInfo {
+.form_column-3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.form_tertiaryInfo--input {
-  border: none;
-}
-.form_tertiaryInfo textarea {
+
+.form_column-3 textarea {
   width: 200px;
   height: 200px;
   padding: 0.5rem;

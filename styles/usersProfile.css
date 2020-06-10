@@ -3,42 +3,22 @@
   justify-content: space-between;
 }
 
-.posts {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 45vw;
-}
-.your_posts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.your_posts-title {
-  padding: 3rem 0rem 1rem;
-}
-.your_posts-searchbar {
-  margin-bottom: 0rem;
-  margin-top: 2rem;
-  width: 15vw;
-}
-
-.create_post-create,
-.create_post-edit {
+/* ************************************ CREATE / EDIT (left side of the page) ************************************** */
+.create_post-button,
+.edit_profile-button {
   border: 1px solid black;
   padding: 0.4rem;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s all;
 }
-.create_post-create:hover,
-.create_post-edit:hover {
+.create_post-button:hover,
+.edit_profile-button:hover {
   color: white;
   border: 1px solid white;
   background-color: black;
 }
-.create_post-create.active {
+.create_post-button.active {
   color: white;
   border: 1px solid white;
   background-color: black;
@@ -55,6 +35,11 @@
 }
 .create_post--form input {
   width: 20vw;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.5s all;
 }
 .create_post--form input:nth-of-type(3) {
   background-color: white;
@@ -68,11 +53,11 @@
   border: 1px solid white;
   background-color: black;
 }
-.create_post--image {
+.create_post--addImage {
   display: flex;
   align-items: baseline;
 }
-.create_post--image input {
+.create_post--addImage input {
   border: none;
 }
 .create_post--form textarea {
@@ -82,4 +67,32 @@
   border: 1px solid black;
   margin-bottom: 1rem;
   border-radius: 4px;
+}
+
+/* ********************************** POSTS (right side of the page) ************************************** */
+.posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 45vw;
+}
+
+.your_posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.your_posts-title {
+  padding: 3rem 0rem 1rem;
+}
+
+.your_posts-searchbar {
+  width: 15vw;
+  margin-top: 2rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.5s all;
 }

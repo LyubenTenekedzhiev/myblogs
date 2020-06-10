@@ -10,6 +10,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- ********* reusing the CSS from main.css for the header *********** -->
     <header>
       <h2 class="header_title">MyBlogs</h2>
       <nav>
@@ -22,13 +23,13 @@
 
     <main class="usersProfile">
       <section class="create_post">
-        <h3><span class="create_post-create active">Create a post</span> or <span class="create_post-edit">Edit your profile</span></h3>
+        <h3><span class="create_post-button active">Create a post</span> or <span class="edit_profile-button">Edit your profile</span></h3>
 
         <form class="create_post--form">
           <input type="text" placeholder="Title" required/>
           <textarea placeholder="Post's content..." required></textarea>
           <input type="text" placeholder="Keywords" required/>
-          <div class="create_post--image">
+          <div class="create_post--addImage">
             <label for="myfile">Image:</label>
             <input type="file" name="myfile" required/>
           </div>
@@ -41,6 +42,8 @@
           <h2 class="your_posts-title">Your posts</h2>
           <input class="your_posts-searchbar" type="text" placeholder="Find a post..."/>
         </div>
+
+        <!-- ********* reusing the CSS from main.css for the posts *********** -->
         <div class="posts">
           <div class="main_posts-post">
             <i class="fa fa-pencil"></i>
@@ -61,16 +64,17 @@
             </p>
           </div>
         </div>
+        <!-- ********* reusing the CSS from main.css for the pagination *********** -->
         <div class="main_pagination">
-          <h4 class="main_pagination--arrow">&lt;</h4>
-          <h4 class="main_pagination--number active">1</h4>
-          <h4 class="main_pagination--number">2</h4>
-          <h4 class="main_pagination--number">3</h4>
-          <h4 class="main_pagination--arrow">&gt;</h4>
+          <h4 class="main_pagination-arrow">&lt;</h4>
+          <h4 class="main_pagination-number active">1</h4>
+          <h4 class="main_pagination-number">2</h4>
+          <h4 class="main_pagination-number">3</h4>
+          <h4 class="main_pagination-arrow">&gt;</h4>
         </div>
       </section>
     </main>
-
+    <!-- ********* reusing the CSS from main.css for the footer *********** -->
     <footer>
       <i class="fa fa-github-square"></i>
       <i class="fa fa-linkedin-square"></i>

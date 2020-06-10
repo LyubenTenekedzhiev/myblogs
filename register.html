@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Document</title>
   </head>
-  <body class="body_placeholder">
+  <body class="body">
+    <!-- ********* reusing the CSS from main.css for the header *********** -->
     <header>
       <h2 class="header_title">MyBlogs</h2>
       <nav>
@@ -22,9 +23,8 @@
 
     <main>
       <form class="register">
-        <!-- action="/blogpost/database.php" method="POST" -->
         <div class="form_info">
-          <div class="form_mainInfo">
+          <div class="form_column-1">
             <input type="text" placeholder="First name *" autofocus required />
             <input type="text" placeholder="Last name *" required />
             <input type="text" placeholder="Username *" required maxlength="15" />
@@ -37,33 +37,33 @@
             />
           </div>
 
-          <div class="form_secondaryInfo">
+          <div class="form_column-2">
             <labe>Gender*:</labe>
-            <div class="form_radioBtn">
+            <div class="form_radioBtn-container">
               <input type="radio" name="gender" required />
               <label for="gender">Male</label>
             </div>
-            <div class="form_radioBtn">
+            <div class="form_radioBtn-container">
               <input type="radio" name="gender" required />
               <label for="gender">Female</label>
             </div>
-            <div class="form_radioBtn">
+            <div class="form_radioBtn-container">
               <input type="radio" name="gender" required />
               <label for="gender">Non-binary</label>
             </div>
 
             <labe>Role*:</labe>
-            <div class="form_radioBtn">
+            <div class="form_radioBtn-container">
               <input type="radio" name="role" required />
               <label for="role">User</label>
             </div>
-            <div class="form_radioBtn">
+            <div class="form_radioBtn-container">
               <input type="radio" name="role" required />
               <label for="role">Admin</label>
             </div>
           </div>
 
-          <div class="form_tertiaryInfo">
+          <div class="form_column-3">
             <textarea placeholder="How would you describe yourself?" maxlength="512"></textarea>
           </div>
         </div>
@@ -71,6 +71,7 @@
       </form>
     </main>
 
+    <!-- ********* reusing the CSS from main.css for the footer *********** -->
     <footer>
       <i class="fa fa-github-square"></i>
       <i class="fa fa-linkedin-square"></i>
