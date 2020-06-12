@@ -10,7 +10,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- ********* reusing the CSS from main.css for the header *********** -->
     <header>
       <h2 class="header_title">MyBlogs</h2>
       <nav>
@@ -26,14 +25,14 @@
         <h3><span class="create_post-button active">Create a post</span> or <span class="edit_profile-button">Edit your profile</span></h3>
 
         <form class="create_post--form">
-          <input type="text" placeholder="Title" required/>
-          <textarea placeholder="Post's content..." required></textarea>
-          <input type="text" placeholder="Keywords" required/>
+          <input id="post_title" type="text" placeholder="Title" required />
+          <textarea id="post_text" placeholder="Post's content..." required></textarea>
+          <input id="post_keywords" type="text" placeholder="Keywords" required/>
           <div class="create_post--addImage">
             <label for="myfile">Image:</label>
-            <input type="file" name="myfile" required/>
+            <input type="file" name="myfile"/>
           </div>
-          <input type="submit" value="Post" />
+          <input id="post_submit" type="submit" value="Post" />
         </form>
       </section>
 
@@ -43,28 +42,9 @@
           <input class="your_posts-searchbar" type="text" placeholder="Find a post..."/>
         </div>
 
-        <!-- ********* reusing the CSS from main.css for the posts *********** -->
         <div class="posts">
-          <div class="main_posts-post">
-            <i class="fa fa-pencil"></i>
-            <img class="main_posts-post--image" src="./assets/no-image.png" />
-            <h3 class="main_posts-post--title">Title of the post</h3>
-            <p class="main_posts-post--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cupiditate nulla impedit unde architecto incidunt laudantium
-              molestiae libero quaerat, nisi modi deserunt maxime
-            </p>
-          </div>
-          <div class="main_posts-post">
-            <i class="fa fa-pencil"></i>
-            <img class="main_posts-post--image" src="./assets/no-image.png" />
-            <h3 class="main_posts-post--title">Title of the post</h3>
-            <p class="main_posts-post--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cupiditate nulla impedit unde architecto incidunt laudantium
-              molestiae libero quaerat, nisi modi deserunt maxime
-            </p>
-          </div>
+         <!-- ********** rendered posts ********** -->
         </div>
-        <!-- ********* reusing the CSS from main.css for the pagination *********** -->
         <div class="main_pagination">
           <h4 class="main_pagination-arrow">&lt;</h4>
           <h4 class="main_pagination-number active">1</h4>
@@ -74,13 +54,13 @@
         </div>
       </section>
     </main>
-    <!-- ********* reusing the CSS from main.css for the footer *********** -->
     <footer>
       <i class="fa fa-github-square"></i>
       <i class="fa fa-linkedin-square"></i>
       <i class="fa fa-pinterest-square"></i>
       &copy; Lyuben Tenekedzhiev
     </footer>
+    <script type="module" src="./src/index.js"></script>
   <body>
 </body>
 </html>
